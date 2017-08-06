@@ -46,16 +46,6 @@ string decimalToBase(int number, int B) {
         ss << number;
         ss >> converted;
     }
-    else if (B < 10) {
-        int remainder;
-        int quotient = number;
-        do {
-            remainder = quotient % B;
-            quotient = quotient / B;
-            converted += intToCharBase(remainder);
-        } while (quotient);
-        converted = reverseStr(converted);
-    }
     else {
         int remainder;
         int quotient = number;
