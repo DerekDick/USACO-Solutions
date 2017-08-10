@@ -12,8 +12,8 @@ using namespace std;
 
 struct Wormhole {
     int index;
-    long x;
-    long y;
+    int x;
+    int y;
     
     Wormhole* findNextWormhole(Wormhole* wormholesArr, int N) {
         vector<Wormhole*> candidateWormholes = vector<Wormhole*>();
