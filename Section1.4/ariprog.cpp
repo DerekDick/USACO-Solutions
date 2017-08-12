@@ -17,8 +17,8 @@ int main() {
     fin.close();
     
     // Generate the bisquare set
-    bool bisquaresSet[1000000];
-    fill(bisquaresSet, bisquaresSet + 1000000, false);
+    bool bisquaresSet[125000];
+    fill(bisquaresSet, bisquaresSet + 125000, false);
     for (int i = 0; i <= M; i++) {
         for (int j = 0; j <= M; j++) {
             bisquaresSet[i*i + j*j - 1] = true;
